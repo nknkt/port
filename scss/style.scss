@@ -144,32 +144,35 @@ body {
 		}
 	}
 
-	.sam .pic {
-		position: relative;
+	.sam {
+		margin-bottom: 120px;
+		.pic {
+			position: relative;
 
-		img {
-			transition: 0.8s ease-out;
-			-webkit-transition: 0.8s ease-out;
+			img {
+				transition: 0.8s ease-out;
+				-webkit-transition: 0.8s ease-out;
 
-			&:hover {
-				transform: scale(1.1, 1.1);
-				transition: 0.8s ease-out;
-				-webkit-transform: scale(1.1, 1.1);
-				-webkit-transition: 0.8s ease-out;
-				transform: scale(1.1, 1.1);
-				transition: 0.8s ease-out;
-				-webkit-transform: scale(1.1, 1.1);
-				-webkit-transition: 0.8s ease-out;
+				&:hover {
+					transform: scale(1.1, 1.1);
+					transition: 0.8s ease-out;
+					-webkit-transform: scale(1.1, 1.1);
+					-webkit-transition: 0.8s ease-out;
+					transform: scale(1.1, 1.1);
+					transition: 0.8s ease-out;
+					-webkit-transform: scale(1.1, 1.1);
+					-webkit-transition: 0.8s ease-out;
+				}
 			}
-		}
 
-		h3 {
-			position: absolute;
-			top: 1.5vh;
-			left: 1.5vw;
-			color: rgba(255, 255, 255, 0.5);
-			font-size: 6.2vw;
-			z-index: 1000;
+			h3 {
+				position: absolute;
+				top: 1.5vh;
+				left: 1.5vw;
+				color: rgba(255, 255, 255, 0.5);
+				font-size: 6.2vw;
+				z-index: 1000;
+			}
 		}
 	}
 }
@@ -673,11 +676,16 @@ body {
 		}
 	}
 
-	.sec03 .mail {
-		margin-bottom: 4vh;
+	.sec03 {
+		.sam {
+			margin-bottom: 3.5vh;
+			}
+		.mail {
+			margin-bottom: 4vh;
 
-		a i {
-			font-size: 9vw;
+			a i {
+				font-size: 9vw;
+			}
 		}
 	}
 

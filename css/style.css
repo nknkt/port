@@ -139,6 +139,10 @@ body {
   -webkit-transform: scale(1.2, 1.2);
 }
 
+.sec03 .sam {
+  margin-bottom: 120px;
+}
+
 .sec03 .sam .pic {
   position: relative;
 }
@@ -616,6 +620,9 @@ body {
   }
   .sec01 .yolo::before {
     border-width: 1.7rem;
+  }
+  .sec03 .sam {
+    margin-bottom: 3.5vh;
   }
   .sec03 .mail {
     margin-bottom: 4vh;
