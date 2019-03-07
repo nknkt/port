@@ -1,0 +1,638 @@
+/* animation
+-----------------------------------------------------------------*/
+body {
+  animation: fadeIn 2.5s cubic-bezier(0.47, 0, 0.75, 0.72) 0s 1 normal;
+  -webkit-animation: fadeIn 2.5s cubic-bezier(0.47, 0, 0.75, 0.72) 0s 1 normal;
+  background: #fdfdfd;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav_btn {
+  display: none;
+}
+
+/* rayout
+-----------------------------------------------------------------*/
+.txt {
+  font-size: 12px;
+  letter-spacing: 0.03rem;
+  line-height: 2.1;
+  font-family: "Sawarabi Mincho";
+  margin-bottom: 20px;
+}
+
+.txt02 {
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+  line-height: 1.9;
+  font-family: "Sawarabi Mincho";
+}
+
+.txt02:nth-of-type(1) {
+  margin-bottom: 5px;
+}
+
+.sec01 {
+  position: relative;
+  padding-bottom: 100vh;
+}
+
+.sec01 h1 {
+  position: absolute;
+  top: 52px;
+  right: 0;
+}
+
+.sec01 .about {
+  position: absolute;
+  top: 128px;
+  right: 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.08rem;
+}
+
+.sec01 .yolo {
+  position: absolute;
+  top: 53.5%;
+  right: -15.3%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding-bottom: 5px;
+  border-bottom: 3px solid #333;
+  font-family: "Georgia";
+  font-size: 6.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.sec01 .yolo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 3rem #fdfdfd solid;
+}
+
+.sec01 .menu nav {
+  position: absolute;
+  top: 422px;
+  right: 0;
+  left: 0;
+  letter-spacing: 0.05rem;
+}
+
+.sec01 .menu nav li {
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 0.3rem;
+}
+
+.sec01 .down {
+  position: absolute;
+  top: 85vh;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.sec02 {
+  background: url(../images/bg.jpg);
+  padding: 145px 3%;
+}
+
+.sec03 {
+  padding: 230px 3%;
+}
+
+.sec03 .mail {
+  margin-bottom: 100px;
+}
+
+.sec03 .mail a i {
+  font-size: 2vw;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+}
+
+.sec03 .mail a i:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -webkit-transform: scale(1.2, 1.2);
+}
+
+.sec03 .sam .pic {
+  position: relative;
+}
+
+.sec03 .sam .pic img {
+  transition: 0.8s ease-out;
+  -webkit-transition: 0.8s ease-out;
+}
+
+.sec03 .sam .pic img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.8s ease-out;
+  -webkit-transform: scale(1.1, 1.1);
+  -webkit-transition: 0.8s ease-out;
+  transform: scale(1.1, 1.1);
+  transition: 0.8s ease-out;
+  -webkit-transform: scale(1.1, 1.1);
+  -webkit-transition: 0.8s ease-out;
+}
+
+.sec03 .sam .pic h3 {
+  position: absolute;
+  top: 1.5vh;
+  left: 1.5vw;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 6.2vw;
+  z-index: 1000;
+}
+
+.sec04 {
+  padding: 100px 3% 130px;
+}
+
+.sec04 h3 {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sec04 h3::after {
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+  display: block;
+  content: "";
+  border-bottom: 1px solid #333;
+}
+
+.sec04 .col2 {
+  position: relative;
+}
+
+.sec04 .le {
+  float: left;
+  width: 47.92%;
+  float: left;
+  width: 47.92%;
+}
+
+.sec04 .le .icon {
+  max-width: 460px;
+}
+
+.sec04 .le .icon li {
+  float: left;
+  margin-right: 4.34%;
+  margin-bottom: 20px;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.sec04 .le .icon li:last-child {
+  margin-right: 0;
+}
+
+.sec04 .ri {
+  float: right;
+  width: 40.14%;
+}
+
+.sec04 .ri .graph {
+  width: 45.83%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sec04 .graph .box {
+  position: relative;
+  max-width: 385px;
+  width: 32.08%;
+  height: 220px;
+  margin: auto;
+  overflow: hidden;
+  top: 10px;
+}
+
+.sec04 .graph:before {
+  content: 'my skill';
+  position: absolute;
+  bottom: 1%;
+  left: 20px;
+  color: #222;
+  font-size: 3rem;
+}
+
+.sec04 .graph:after {
+  content: '';
+  position: relative;
+  display: block;
+  bottom: -100%;
+  border-bottom: 2px solid #191919;
+}
+
+.sec04 .graph p {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: rotate(-90deg);
+}
+
+.sec04 .graph .bar {
+  position: absolute;
+  width: 12.98%;
+  bottom: 2px;
+  animation: up 1s ease-in;
+  -webkit-animation: up 1s ease-in;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.sec04 .graph .bar1 {
+  height: 85%;
+  background: #474747;
+  left: 28.57%;
+}
+
+.sec04 .graph .bar2 {
+  height: 60%;
+  background: #757575;
+  left: 42.85%;
+}
+
+.sec04 .graph .bar3 {
+  height: 100%;
+  background: #333;
+  left: 57.14%;
+}
+
+.sec04 .graph .bar4 {
+  height: 60%;
+  background: #757575;
+  left: 71.42%;
+}
+
+.sec04 .graph .bar5 {
+  height: 60%;
+  background: #757575;
+  left: 85.71%;
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.sec05 {
+  padding: 230px 3%;
+  background: #f5f6fd;
+}
+
+.sec05 h2 {
+  margin-bottom: 50px;
+}
+
+.sec05 h3 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sec05 h3::after {
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+  display: block;
+  content: "";
+  border-bottom: 1px solid #333;
+}
+
+.sec05 .le {
+  float: left;
+  width: 33.34%;
+  margin-right: 6.24%;
+}
+
+.sec05 .ri {
+  float: right;
+  width: 20.84%;
+}
+
+.sec06 {
+  position: absolute;
+  width: 100%;
+  padding: 60px 3% 20px;
+  background: #191919;
+  color: #fdfdfd;
+}
+
+.sec06 a {
+  color: #f9f9f9;
+  transition: 0.6s ease-out;
+  -webkit-transition: 0.6s ease-out;
+}
+
+.sec06 a:hover {
+  color: #bbbbbb;
+  transition: 0.6s ease-out;
+  -webkit-transition: 0.6s ease-out;
+}
+
+.sec06 .txt {
+  margin-bottom: 200px;
+}
+
+.sec06 .sns {
+  position: relative;
+  bottom: 23px;
+  left: 100px;
+}
+
+.sec06 .sns p {
+  display: inline-block;
+  margin-right: 16px;
+  font-size: 2.5vw;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+}
+
+.sec06 .sns p:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+}
+
+.sec06 .sns .sub {
+  font-family: 'Oxygen Mono', monospace;
+  letter-spacing: -0.2rem;
+}
+
+.sec06 .sns .fa a:hover {
+  color: #3B5998;
+}
+
+.sec06 .sns .inst a:hover {
+  color: #d5366d;
+}
+
+@media screen and (max-width: 1280px) {
+  .sec01 .yolo {
+    font-size: 4.5rem;
+    top: 55%;
+    right: -9.3%;
+  }
+  .sec01 .yolo::before {
+    border-width: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sec01 {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100vh;
+  }
+  .sec01 h1 {
+    font-size: 6.25rem;
+  }
+  .sec01 .yolo {
+    margin: 0 auto;
+    top: 70%;
+    right: 0;
+    left: 0;
+    transform: inherit;
+    padding-bottom: 3px;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+  }
+  .sec01 .down {
+    top: calc(100vh - 220px);
+  }
+  .sec02 {
+    padding: 100px 30px;
+  }
+  .sec03 {
+    padding: 100px 30px;
+  }
+  .sec03 .mail a i {
+    font-size: 4.5vw;
+  }
+  .sec04 {
+    padding: 100px 30px;
+  }
+  .sec04 .le {
+    float: none;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .sec04 .le .icon li {
+    font-size: 8vw;
+  }
+  .sec04 .ri {
+    float: none;
+    width: auto;
+  }
+  .sec04 .ri .graph {
+    width: 100%;
+    /* position: inherit; */
+  }
+  .sec04 .graph:before {
+    left: 8px;
+  }
+  .sec05 {
+    padding: 100px 30px;
+  }
+  .sec05 h2 {
+    margin-bottom: 50px;
+  }
+  .sec05 h3 {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .sec05 h3::after {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    display: block;
+    content: "";
+    border-bottom: 1px solid #333;
+  }
+  .sec05 .le {
+    width: 46%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+  }
+  .sec05 .ri {
+    float: none;
+    width: auto;
+  }
+  .sec06 {
+    text-align: center;
+    padding: 30px;
+  }
+  .sec06 a {
+    color: #fdfdfd;
+  }
+  .sec06 .txt {
+    margin-bottom: 100px;
+  }
+  .sec06 .sns {
+    position: relative;
+    bottom: 23px;
+    left: 0;
+    right: 0;
+  }
+  .sec06 .sns p {
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_btn {
+    display: block;
+    position: fixed;
+    width: 35px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+  .nav_btn div {
+    position: relative;
+  }
+  .nav_btn span {
+    display: block;
+    height: 3px;
+    background: #333;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+  }
+  .nav_btn span:nth-child(1) {
+    top: 0;
+  }
+  .nav_btn span:nth-child(2) {
+    top: 12px;
+  }
+  .nav_btn span:nth-child(3) {
+    top: 24px;
+  }
+  .nav_btn.open span:nth-child(1) {
+    top: 12px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .nav_btn.open span:nth-child(2) {
+    width: 0;
+    left: 50%;
+  }
+  .nav_btn.open span:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .sec01 .menu nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin: -60px auto 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+  }
+  nav ul {
+    position: absolute;
+    top: 25vh;
+    right: 0;
+    left: 0;
+  }
+  nav ul li {
+    text-align: center;
+    padding: 10px;
+  }
+  .txt {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .txt02 {
+    font-size: 11px;
+  }
+  .sec01 {
+    width: 100%;
+    padding-bottom: calc(100vh - 160px);
+  }
+  .sec01 h1 {
+    font-size: 3.5rem;
+    position: initial;
+  }
+  .sec01 .about {
+    top: 9%;
+    font-size: 1.3rem;
+    position: inherit;
+  }
+  .sec01 .yolo {
+    font-size: 3rem;
+    margin: 0 auto;
+    top: calc(100vh - 300px);
+    right: 0;
+    left: 0;
+    -webkit-transform: inherit;
+    transform: inherit;
+    padding-bottom: 3px;
+    font-size: 3rem;
+  }
+  .sec01 .yolo::before {
+    border-width: 1.7rem;
+  }
+  .sec03 .mail {
+    margin-bottom: 4vh;
+  }
+  .sec03 .mail a i {
+    font-size: 9vw;
+  }
+  .sec04 .le .icon li {
+    font-size: 12vw;
+  }
+  .sec05 .le {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 4vh;
+  }
+  .sec06 .sns p {
+    font-size: 11vw;
+  }
+}

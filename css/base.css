@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 50%;
+}
+
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-weight: 100;
+  color: #333;
+  font-feature-settings: "palt";
+  -webkit-font-feature-settings: "palt";
+  -moz-font-feature-settings: "palt";
+}
+
+img {
+  max-width: 100%;
+}
+
+.vsp,
+.vtb {
+  display: none;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 7.5rem;
+  line-height: 1;
+  letter-spacing: 0.4rem;
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  margin-bottom: 45px;
+}
+
+h3 {
+  font-size: 3.75rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1;
+  letter-spacing: -0.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+}
+
+a:hover {
+  color: #e1e1e1;
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fl_r {
+  float: right;
+}
+
+.fl_l {
+  float: left;
+}
+
+.ta_c {
+  text-align: center;
+}
+
+.ta_l {
+  text-align: left;
+}
+
+.ta_r {
+  text-align: right;
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* PageTopBtn - util.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#PageTopBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 3.5vw;
+  z-index: 1000;
+}
+
+#PageTopBtn a {
+  width: 5vw;
+  height: 5vw;
+  font-size: 2vw;
+  padding: 1.5vw 0;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: #222;
+  text-align: center;
+  border-radius: 50%;
+  outline: none;
+}
+
+#PageTopBtn a:hover {
+  text-decoration: none;
+  color: #222;
+  background: #cecece;
+}
+
+/* Parallax - para.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.para {
+  opacity: 0;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+@media screen and (max-width: 768px) {
+  .vtb {
+    display: block;
+  }
+  h1 {
+    font-size: 7.5rem;
+  }
+  h2,
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+  #PageTopBtn a {
+    width: 10vw;
+    height: 10vw;
+    font-size: 4vw;
+    padding: 2vw 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 40px 10px;
+  }
+  .vpc {
+    display: none;
+  }
+  .vsp {
+    display: block;
+  }
+  #PageTopBtn a {
+    width: 15vw;
+    height: 15vw;
+    font-size: 7vw;
+    padding: 2vw 0;
+  }
+}
